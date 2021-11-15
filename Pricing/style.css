@@ -1,0 +1,173 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    top: 0px;
+}
+
+.header h1 {
+    text-align: center;
+    color: white;
+}
+.banner-our-car {
+    height: 700px;
+    position: relative;
+    background-image: url("./image/banner1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+}
+.banner-our-car .banner-title {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    bottom: 50px;
+    left: 10%;
+}
+.banner-our-car .banner-title::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 70%;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: #fc983c;
+    left: -10px;
+}
+
+/* cars */
+.cars .image {
+    height: 200px;
+    position: relative;
+    background-image: url("./image/car1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -20px;
+}
+@media screen and (max-width: 576px) {
+    .cars .image {
+        background-position-y: -10px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .cars .image {
+        background-position-y: -100px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cars .image {
+        background-position-y: -160px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .cars .image {
+        background-position-y: -70px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .cars .image {
+        background-position-y: 0px;
+    }
+}
+
+.contain-price {
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    height: 50px;
+}
+.contain-price .price {
+    position: absolute;
+    color: #fc983d;
+    font-size: 30px;
+}
+.contain-price span {
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+}
+.contain-price .from {
+    top: 5px;
+    right: 5px;
+    color: rgb(136, 135, 135);
+}
+.contain-price .day {
+    right: 5px;
+    bottom: 5px;
+    font-weight: 500;
+}
+.cars .car-name {
+    margin-top: 15px;
+    font-size: 18px !important;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 600;
+}
+.cars .car-category {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+.cars .bottom {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    height: 50px;
+}
+.bottom div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 40%;
+    height: 37px;
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+.bottom div:hover {
+    background-color: #fc983d;
+    color: white;
+}
+.bottom .book-now {
+    left: 7%;
+}
+.bottom .details {
+    right: 7%;
+}
+.container-our-car {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.paging-our-car {
+    margin-bottom: 50px;
+}
+.paging-our-car div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    color: #fc983d;
+    cursor: pointer;
+    font-weight: 600;
+}
+.paging-our-car div:hover {
+    background-color: #fc983d;
+    color: white;
+    border-color: #fc983d;
+}
