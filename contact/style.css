@@ -1,0 +1,81 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #1d1d1d;
+}
+.header h1 {
+    text-align: center;
+    color: white;
+}
+
+/* banner */
+.banner {
+    height: 700px;
+    background-image: url("./images/banner1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -200px;
+}
+
+.banner .row {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+}
+.banner .title {
+    color: white;
+    line-height: 1.5;
+}
+.banner .title p:not(:last-child) {
+    line-height: 0.9;
+    font-size: 75px;
+}
+.banner .title p:last-child {
+    font-size: 18px;
+}
+/* end banner */
+
+/* our blogs */
+.content-first {
+    margin-top: 50px;
+}
+.content-first .sub-title {
+    color: #fc983d !important;
+    text-align: center;
+    font-weight: 600;
+}
+.content-first .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+.content-first .col-lg-3 {
+    padding: 20px;
+}
+.content-first .row {
+    margin-top: 50px;
+}
+.service-name {
+    position: relative;
+}
+.service-name .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 30px;
+    color: #fc983d;
+    top: -15px;
+    left: 5px;
+}
+.service-name p {
+    margin-left: 50px;
+    font-weight: 600;
+}
+
