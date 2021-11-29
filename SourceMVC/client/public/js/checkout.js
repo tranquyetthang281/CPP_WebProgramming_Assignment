@@ -1,4 +1,4 @@
-var DOMAIN = "http://localhost/CPP_Assignment_CNPM/SourceMVC";
+var DOMAIN = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC";
 var cardDrop = document.getElementById("card-dropdown");
 var activeDropdown;
 cardDrop.addEventListener("click", function () {
@@ -11,7 +11,7 @@ cardDrop.addEventListener("click", function () {
 });
 
 window.onclick = function (e) {
-    var DOMAIN = "http://localhost/CPP_Assignment_CNPM/SourceMVC";
+    var DOMAIN = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC";
 
     if (e.target.tagName === "LI" && activeDropdown) {
         if (e.target.innerHTML === "Zalo Pay") {

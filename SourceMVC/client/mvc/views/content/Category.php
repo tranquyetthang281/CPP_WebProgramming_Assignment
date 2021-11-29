@@ -1,4 +1,4 @@
-<?php $DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/client' ?>
+<?php $DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client' ?>
 
 <div class="menu mx-auto">
     <div class="category mx-auto" id="menu1">
@@ -13,7 +13,7 @@
                     <div class="item">
                         <div type="button" data-bs-toggle="modal" data-bs-target="#detail<?php echo $item['id'] ?>">
                             <?php include "DetailItemModal.php" ?>
-                            <img src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/<?php echo $item['image'] ?>" alt=" " />
+                            <img src="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/<?php echo $item['image'] ?>" alt=" " />
                         </div>
                         <div class=" name"><?php echo $item['name'] ?>
                         </div>

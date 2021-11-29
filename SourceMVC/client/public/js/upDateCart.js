@@ -1,4 +1,4 @@
-var DOMAIN = "http://localhost/CPP_Assignment_CNPM/SourceMVC/client";
+var DOMAIN = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client";
 //handle increase decrease
 $(".quantity-change").click(function () {
     //get id item

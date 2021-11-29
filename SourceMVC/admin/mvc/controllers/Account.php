@@ -28,6 +28,6 @@ class Account extends Controller
         $state = (int)$accountInfo['state'];
         $state = $state == 1 ? 2 : 1;
         $account->LockAccount($username, $state);
-        header("Location: http://localhost/CPP_Assignment_CNPM/SourceMVC/admin/Account/AccountPage");
+        header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Account/AccountPage");
     }
 }

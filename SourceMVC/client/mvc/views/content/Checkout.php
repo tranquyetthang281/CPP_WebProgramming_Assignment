@@ -1,4 +1,4 @@
-<?php $DOMAIN = "http://localhost/CPP_Assignment_CNPM/SourceMVC";
+<?php $DOMAIN = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC";
 $items = $_SESSION;
 $total = 0;
 ?>

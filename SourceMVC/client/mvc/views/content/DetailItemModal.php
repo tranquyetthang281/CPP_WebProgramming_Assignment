@@ -12,7 +12,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6" style="display: flex; justify-content: center;">
-                                <img id="img-detail" style="" src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/<?php echo $item['image'] ?>" alt="  " />
+                                <img id="img-detail" style="" src="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/<?php echo $item['image'] ?>" alt="  " />
                             </div>
                             <div class="col-md-6">
                                 <div class="disc-detail">

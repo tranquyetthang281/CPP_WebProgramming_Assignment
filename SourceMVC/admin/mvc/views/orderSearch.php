@@ -1,5 +1,5 @@
 <?php
-$DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/admin';
+$DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin';
 ?>
 <table class="table table-striped mt-4">
     <thead>

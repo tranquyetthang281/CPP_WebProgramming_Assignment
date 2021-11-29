@@ -1,5 +1,5 @@
 <?php
-$DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/client';
+$DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client';
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ $DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/client';
     <header>
         <div class="title">
             <a href="<?php echo $DOMAIN ?>" style="text-decoration: none;">
-                <img src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/logo.png" height="100px">
+                <img src="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/logo.png" height="100px">
             </a>
         </div>
         <div class="search-bar">
@@ -163,7 +163,7 @@ $DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/client';
                                 <ul>
                                     <li><a href="<?php echo $DOMAIN ?>" style="text-decoration: none;">
 
-                                            <img src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/logo.png" height="150px" style="margin-left: 100px;"></a></li>
+                                            <img src="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/logo.png" height="150px" style="margin-left: 100px;"></a></li>
 
                                 </ul>
                             </div>

@@ -9,7 +9,7 @@
 
 
     <div class="col-lg-6">
-      <img src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/contact.jpg" class="pt-5" width="100%" alt="">
+      <img src="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/contact.jpg" class="pt-5" width="100%" alt="">
     </div>
     <div class="col-lg-6">
       <form method="POST" action="<?php echo $DOMAIN ?>/Contact/Thank" id="contactForm">

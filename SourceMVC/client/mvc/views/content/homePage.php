@@ -1,4 +1,4 @@
-<?php $DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/client' ?>
+<?php $DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client' ?>
 
 <div class="banner">
     <!-- slide -->
@@ -42,7 +42,7 @@
                             <div class="item">
                                 <?php include "DetailItemModal.php" ?>
                                 <div type="button" data-bs-toggle="modal" data-bs-target="#detail<?php echo $item['id'] ?>">
-                                    <img src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/<?php echo $item['image'] ?>" alt="  " />
+                                    <img src="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/<?php echo $item['image'] ?>" alt="  " />
                                 </div>
                                 <div class="name"><?php echo $item['name'] ?></div>
                                 <div class="price"><?php echo $item['price'] ?> $</div>

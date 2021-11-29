@@ -1,5 +1,5 @@
 <?php
-$DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/admin';
+$DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@ $DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/admin';
 
 <?php
 if (!is_admin()) {
-    header("Location: http://localhost/CPP_Assignment_CNPM/SourceMVC/client/");
+    header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client/");
 }
 ?>
 
@@ -27,7 +27,7 @@ if (!is_admin()) {
     <div class="header">
         <h1> <?php if( $data['render'] == 'order') echo 'Manage Orders'; else if($data['render'] == 'account') echo 'Manage Accounts'; else echo 'Manage Items' ?>
         </h1>
-        <a style="position:absolute; right: 50px; top:10px;" href="http://localhost/CPP_Assignment_CNPM/SourceMVC/client/Login/Logout"><i class="fa fa-sign-out text-warning" style="font-size: 40px;" aria-hidden="true"></i></a>
+        <a style="position:absolute; right: 50px; top:10px;" href="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client/Login/Logout"><i class="fa fa-sign-out text-warning" style="font-size: 40px;" aria-hidden="true"></i></a>
     </div>
     <div class="container">
         <div class="row mt-3">

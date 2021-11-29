@@ -3,7 +3,7 @@
         <div class="row no-gutters">
           <div
             class="col-md-6 justify-content-center align-items-center img-left"
-            style="background-image: url(http://localhost/CPP_Assignment_CNPM/SourceMVC/client/public/images/choose.png)"
+            style="background-image: url(http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client/public/images/choose.png)"
           ></div>
           <div class="col-md-6 py-md-5">
             <div class="mb-5 pl-md-5">
@@ -26,7 +26,7 @@
                 Come take a bite out of Denver at POP Restaurant -- we'll see
                 you soon!
               </p>
-              <p><a href="http://localhost/CPP_Assignment_CNPM/SourceMVC/client" class="btn btn-warning">Choose</a></p>
+              <p><a href="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client" class="btn btn-warning">Choose</a></p>
             </div>
           </div>
         </div>

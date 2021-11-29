@@ -1,11 +1,11 @@
 $(document).ready(function () {
     //set image for input
-    var DOMAIN = "http://localhost/CPP_Assignment_CNPM/SourceMVC/admin";
+    var DOMAIN = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin";
     $('input[name="photo"]').change(function () {
         var input_image = $(this).val();
         input_image = input_image.substr(12, 999);
         $(".image-upload").css({
-            "background-image": "url('http://localhost/CPP_Assignment_CNPM/SourceMVC/images/" + input_image + "')",
+            "background-image": "url('http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/" + input_image + "')",
         });
     });
     //ajax add new item

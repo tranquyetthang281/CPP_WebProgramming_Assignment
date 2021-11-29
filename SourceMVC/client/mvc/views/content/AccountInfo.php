@@ -76,6 +76,6 @@
         </div>
     </div>
     <script>
-        DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/client';
+        DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client';
     </script>
 <?php } ?>

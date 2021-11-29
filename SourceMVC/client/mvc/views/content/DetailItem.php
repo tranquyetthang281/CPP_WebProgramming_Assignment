@@ -1,4 +1,4 @@
-<?php $DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/client' ?>
+<?php $DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client' ?>
 
 
 <!--Detail-->
@@ -6,7 +6,7 @@
 <div class="modal-body">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6"><img class="img-detail" src="http://localhost/CPP_Assignment_CNPM/SourceMVC/images/<?php echo $data['item']['image'] ?>" alt="  " /></div>
+            <div class="col-md-6"><img class="img-detail" src="http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/<?php echo $data['item']['image'] ?>" alt="  " /></div>
             <div class="col-md-6">
                 <div class="disc-detail" style="color: white; font-size: 30px;">
                     <p><?php echo $data['item']['name'] ?></p>

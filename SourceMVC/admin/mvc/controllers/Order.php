@@ -23,13 +23,13 @@ class Order extends Controller
     {
         $orderModel = $this->model('OrderModel');
         $orderModel->update_state($orderID);
-        header("Location: http://localhost/CPP_Assignment_CNPM/SourceMVC/admin/Order/OrderPage");
+        header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Order/OrderPage");
     }
     function deleteOrder($orderID)
     {
         $orderModel = $this->model('OrderModel');
         $orderModel->remove_order($orderID);
-        header("Location: http://localhost/CPP_Assignment_CNPM/SourceMVC/admin/Order/OrderPage");
+        header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Order/OrderPage");
     }
     function removeAll()
     {

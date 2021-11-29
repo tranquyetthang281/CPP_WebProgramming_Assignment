@@ -37,7 +37,7 @@ class Login extends Controller
     {
         $this->update_item_cart();
         doLogout();
-        header("Location: http://localhost/CPP_Assignment_CNPM/SourceMVC/client/");
+        header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client/");
     }
     function accountPage()
     {

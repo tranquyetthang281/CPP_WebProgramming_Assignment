@@ -1,5 +1,5 @@
 //scroll
-var DOMAIN = "http://localhost/CPP_Assignment_CNPM/SourceMVC/client";
+var DOMAIN = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client";
 $(".categories").hide();
 window.onload = function () {};
 
@@ -132,7 +132,7 @@ $(".login-button").click(function () {
                     }, 1500);
                 } else {
                     if (result == "user") window.location.href = DOMAIN;
-                    else window.location.href = "http://localhost/CPP_Assignment_CNPM/SourceMVC/admin";
+                    else window.location.href = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin";
                 }
             },
         });

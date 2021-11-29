@@ -1,5 +1,5 @@
 <?php
-$DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/admin';
+$DOMAIN = 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin';
 
 ?>
 <div class="task-name">Edit Item</div>
@@ -7,7 +7,7 @@ $DOMAIN = 'http://localhost/CPP_Assignment_CNPM/SourceMVC/admin';
     <form action="" onsubmit="return false" id="form_add">
         <div class="row">
             <div class="col-lg-4">
-                <div class="image-upload" style="background: url('<?php echo 'http://localhost/CPP_Assignment_CNPM/SourceMVC/images/' . $data['item_info']['image'] ?>')"></div>
+                <div class="image-upload" style="background: url('<?php echo 'http://localhost/CPP_WebProgramming_Assignment/SourceMVC/images/' . $data['item_info']['image'] ?>')"></div>
                 <label for="upload-photo" class="btn btn-success" id="label-upload">Update Image</label>
                 <input type="file" name="photo" id="upload-photo" <?php if (!empty($data['item_info']['image'])) echo ('class="item_image' . $data['item_info']['image'] . '"') ?> />
             </div>
