@@ -1,0 +1,225 @@
+/* cart */
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+#my-cart {
+    background-color: #1d1d1d;
+}
+#my-cart h1 {
+    width: 100%;
+    text-align: center;
+}
+#my-cart .item {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    margin-bottom: 100px;
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    height: 0.5px !important;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #ffa500, transparent);
+    bottom: -20px;
+}
+#my-cart .item img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    max-width: 140px;
+    max-height: 120px;
+}
+#my-cart .name {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 120px;
+    font-size: 20px;
+}
+#my-cart .price {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    user-select: none;
+}
+.quantity {
+    position: absolute;
+    top: 160px;
+    user-select: none;
+    width: 100%;
+}
+
+.quantity .decrease {
+    position: absolute;
+    left: 30%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.quantity .increase:hover,
+.quantity .decrease:hover {
+    border-color: #ffa500;
+    color: #ffa500;
+}
+.quantity .number {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    top: 5px;
+}
+.quantity .increase {
+    right: 30%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.remove-item {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+    cursor: pointer;
+}
+
+.checkout {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: #272727;
+}
+.checkout::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0px;
+    background: linear-gradient(to right, transparent, #ffa500, transparent);
+}
+.checkout-button {
+    cursor: pointer;
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    top: 10%;
+    transition: 0.2s linear;
+    left: 230px;
+    color: white;
+    text-decoration: none;
+}
+.remove-all {
+    cursor: pointer;
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    bottom: 10%;
+    left: 230px;
+    transition: 0.2s linear;
+}
+.checkout-button::before,
+.checkout-button::after,
+.remove-all::before,
+.remove-all::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 2px solid transparent;
+    transition: 0.2s linear;
+}
+.checkout-button::before,
+.remove-all::before {
+    top: 0px;
+    left: 0px;
+}
+.checkout-button::after,
+.remove-all::after {
+    bottom: 0px;
+    right: 0px;
+}
+
+.checkout-button:hover::before {
+    border-top: 2px solid #ffa500;
+    border-left: 2px solid #ffa500;
+    width: 100%;
+    height: 100%;
+}
+.checkout-button:hover::after {
+    border-bottom: 2px solid #ffa500;
+    border-right: 2px solid #ffa500;
+    width: 100%;
+    height: 100%;
+}
+.remove-all:hover::before {
+    border-top: 2px solid #dc3545;
+    border-left: 2px solid #dc3545;
+    width: 100%;
+    height: 100%;
+}
+.remove-all:hover::after {
+    border-bottom: 2px solid #dc3545;
+    border-right: 2px solid #dc3545;
+    width: 100%;
+    height: 100%;
+}
+.remove-all:hover {
+    color: #dc3545;
+}
+.checkout-button:hover {
+    color: #ffa500;
+}
+.checkout .total {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+.message-add {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    width: 330px !important;
+    right: -330px;
+    top: 55px;
+    transition: linear;
+    opacity: 0;
+}
+
+/* cart end */

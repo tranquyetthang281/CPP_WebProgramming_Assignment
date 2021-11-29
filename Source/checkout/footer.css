@@ -1,0 +1,73 @@
+/* footer start */
+footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer a {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: 0.1s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    z-index: 1;
+}
+#twitter {
+    left: 160px;
+}
+#facebook {
+    left: 240px;
+}
+
+#instagram {
+    left: 320px;
+}
+.footer a::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    bottom: 0;
+    right: 0;
+    border: transparent solid 2px;
+    position: absolute;
+    transition: 0.2s linear;
+    z-index: 0;
+}
+.footer a:hover::before {
+    border-bottom: 2px solid hsl(353, 100%, 71%);
+    border-right: 2px solid hsl(353, 100%, 71%);
+    width: 100%;
+    height: 100%;
+}
+.footer a::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    left: 0;
+    border: transparent solid 2px;
+    position: absolute;
+    transition: 0.2s linear;
+    z-index: 0;
+}
+.footer a:hover::after {
+    border-top: 2px solid hsl(353, 100%, 71%);
+    border-left: 2px solid hsl(353, 100%, 71%);
+    width: 100%;
+    height: 100%;
+}
+.footer a:hover {
+    color: hsl(353, 100%, 71%);
+}
+/* footer end */

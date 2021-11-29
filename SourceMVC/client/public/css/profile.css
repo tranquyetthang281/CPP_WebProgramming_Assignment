@@ -1,0 +1,79 @@
+/* account info */
+
+.Acount-detail div.container.rounded {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Acount-detail img.rounded-circle.mt-5 {
+    width: 180px;
+    height: auto;
+}
+.Acount-detail .form-control:focus {
+    box-shadow: none;
+    border-color: #ba68c8;
+}
+
+.Acount-detail .profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none;
+}
+
+.Acount-detail .profile-button:hover {
+    background: #682773;
+}
+
+.Acount-detail .profile-button:focus {
+    background: #682773;
+    box-shadow: none;
+}
+
+.Acount-detail .profile-button:active {
+    background: #682773;
+    box-shadow: none;
+}
+
+.Acount-detail .labels {
+    font-size: 11px;
+}
+
+.Acount-detail button.btn.profile-button {
+    background-color: #434e6e;
+    color: #ffffff;
+}
+.Acount-detail .password-text {
+    cursor: pointer;
+    max-width: 200px;
+    width: auto;
+}
+
+/* modal  */
+.Acount-detail .modal {
+    cursor: default;
+}
+
+.Acount-detail .modal-content {
+    margin-top: 150px;
+}
+.Acount-detail .modal-footer {
+    justify-content: center;
+}
+.Acount-detail .submit-form {
+    position: relative;
+}
+.Acount-detail .submit-form input {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Acount-detail .modal-body label:not(:first-child) {
+    margin-top: 10px;
+}
+/* end account info */
+
+.icon-profile {
+    font-size: 40px;
+    cursor: pointer;
+}

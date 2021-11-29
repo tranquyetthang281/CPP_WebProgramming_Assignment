@@ -1,0 +1,95 @@
+/*Detail start*/
+.img-detail {
+    width: 500px;
+    height: 400px;
+}
+.fade {
+    font-family: block-pro, "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+.buttons-added-detail {
+    opacity: 1;
+    display: inline-block;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.is-form-detail {
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    height: 2.2rem;
+    width: 1.9rem;
+    padding: 0;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #ddd;
+}
+.is-form-detail:focus,
+.input-text:focus {
+    outline: none;
+}
+.is-form-detail.minus {
+    border-radius: 4px 0 0 4px;
+}
+.is-form-detail.plus {
+    border-radius: 0 4px 4px 0;
+}
+.input-qty-detail {
+    background-color: #fff;
+    height: 2.2rem;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+}
+.input-qty-detail::-webkit-outer-spin-button,
+.input-qty-detail::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.modal-title {
+    font-family: block-pro, "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: rgb(206, 187, 113);
+}
+.disc-detail {
+    font-family: sfudinengalt, "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.52);
+}
+#price-detail {
+    font-family: block-pro, "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #c31c1c;
+}
+.calories-detail {
+    max-width: 400px;
+    padding: 0;
+    margin: 0;
+    border: solid 1px rgb(177, 177, 177);
+}
+.calories-detail .row1 {
+    font-family: block-pro, "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: rgb(246, 124, 1);
+    height: 50px;
+
+    margin: 0 auto;
+}
+.calories-detail .row2 {
+    margin: 0 auto;
+    font-size: 16px;
+    color: black;
+}
+/*Detail end*/

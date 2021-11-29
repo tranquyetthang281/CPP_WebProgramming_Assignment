@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bootstrap5/bootstrap.min.css" />
+        <script src="./bootstrap5/jquery.min.js"></script>
+        <script src="./bootstrap5/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="header.css" />
+        <link rel="stylesheet" href="menu.css" />
+        <link rel="stylesheet" href="footer.css" />
+        <link rel="stylesheet" href="banner.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Restaurant POS</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" class="form-control" placeholder="Search..." />
+            <ion-icon class="icon-search" name="search-outline"></ion-icon>
+        </div>
+        <div class="cart" data-bs-target="#my-cart" data-bs-toggle="offcanvas"><ion-icon name="cart-outline"></ion-icon></div>
+    </header>
+    <!--Header end-->
+   
+    <div class="container content">        
+        <div class='ck-container'>
+            <div class='window'>
+              <div class='order-info'>
+                <div class='order-info-content'>
+                  <h2>Order Summary</h2>
+                          <div class='line'></div>
+                  <table class='order-table'>
+                    <tbody>
+                      <tr>
+                        <td><img src='./img/burger.png' class='full-width'></img>
+                        </td>
+                        <td>
+                          <br> <span class='thin'>Burger</span>
+                          <br> Số lượng: 2<br> <span class='thin small'> Đơn giá: $10<br><br></span>
+                        </td>
+          
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class='price'>$20</div>
+                        </td>
+                      </tr>
+                    </tbody>
+          
+                  </table>
+                  <div class='line'></div>
+                  <table class='order-table'>
+                    <tbody>
+                      <tr>
+                        <td><img src='./img/coca.png' class='full-width'></img>
+                        </td>
+                        <td>
+                          <br> <span class='thin'>Coca</span>
+                          <br>Số lượng: 2<br> <span class='thin small'>Đơn giá: $5</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class='price'>$10</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class='line'></div>
+                  <table class='order-table'>
+                    <tbody>
+                      <tr>
+                        <td><img src='./img/icecream.png' class='full-width'></img>
+                        </td>
+                        <td>
+                          <br> <span class='thin'>Icecream</span>
+                          <br>Số lượng: 1<br> <span class='thin small'> Đơn giá: $5 </span>
+                        </td>
+          
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class='price'>$10</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class='line'></div>
+                  <div class='total'>
+                    <span style='float:left;'> TOTAL </span>
+                    <span style='float:right; text-align:right;'> $40 </span>
+                  </div>
+            </div>
+          </div>
+                  <div class='credit-info'>
+                    <div class='credit-info-content'>
+                      <table class='half-input-table'>
+                        <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
+                          <div class='dropdown-select'>
+                          <ul>
+                            <li>Zalo Pay</li>
+                            <li>Momo</li>
+                            </ul></div>
+                          </div>
+                         </td></tr>
+                      </table>
+                      <img src='./img/visa.png' height='80' class='credit-card-image' id='credit-card-image'></img>
+                      <span id='frame-1'>Card Number</span>
+                      <input class='input-field'></input>
+                      <span id='frame-2'>Card Holder</span>
+                      <input class='input-field'></input>
+                      <table class='half-input-table'>
+                        <tr>
+                          <td> <span id='frame-3'>Expires</span>
+                            <input class='input-field'></input>
+                          </td>
+                          <td><span id='frame-4'>CVC</span>
+                            <input class='input-field'></input>
+                          </td>
+                        </tr>
+                      </table>
+                      <button class='pay-btn'>Checkout</button>
+          
+                    </div>
+          
+                  </div>
+                </div>
+              </div> 
+              <script language="javascript" src="checkout.js"></script>
+    </div>
+    
+       <!-- footer start -->
+       <footer>
+        <div class="footer">
+            <a href="#" id="twitter">
+                <ion-icon name="logo-twitter" size="large"></ion-icon>
+            </a>
+
+            <a href="#" id="facebook">
+                <ion-icon name="logo-facebook" size="large"></ion-icon>
+            </a>
+
+            <a href="#" id="instagram">
+                <ion-icon name="logo-instagram" size="large"></ion-icon>
+            </a>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

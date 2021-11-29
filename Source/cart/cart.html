@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bootstrap5/bootstrap.min.css" />
+        <script src="./bootstrap5/jquery.min.js"></script>
+        <script src="./bootstrap5/bootstrap.bundle.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="cart.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="cart" data-bs-target="#my-cart" data-bs-toggle="offcanvas">cart (clickme)</div>
+            <div class="offcanvas offcanvas-end" id="my-cart">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">My Cart</h1>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="item">
+                        <img src="./burger.png" alt="" />
+                        <div class="quantity">
+                            <div class="decrease"><ion-icon name="remove-outline"></ion-icon></div>
+                            <div class="number">1</div>
+                            <div class="increase"><ion-icon name="add-outline"></ion-icon></div>
+                        </div>
+                        <div class="remove-item text-danger">Remove</div>
+                    </div>
+                </div>
+                <div class="checkout">
+                    <div class="checkout-button">Checkout</div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

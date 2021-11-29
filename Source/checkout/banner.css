@@ -1,0 +1,77 @@
+/* banner start */
+.banner {
+    padding: 5px;
+    width: 100%;
+    height: 365px;
+    background-color: white;
+    position: relative;
+    margin-top: 20px;
+}
+.banner .banner-slide {
+    width: 695px;
+    height: 355px;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    width: calc(695px * 4);
+    height: 355px;
+    transition: 0.5s ease-in-out;
+    display: flex;
+}
+
+.slide {
+    width: 695px;
+    height: 355px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    display: flex;
+}
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 1px solid rgb(141, 141, 141);
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.1s linear;
+}
+.bar:last-child {
+    margin-right: 0px;
+}
+.bar:hover {
+    background-color: #ffa500;
+}
+.navigation .checked {
+    background-color: #ffa500;
+}
+.banner .banner-left {
+    margin-top: 5px;
+    margin-right: 5px;
+    position: absolute;
+    width: calc(100% - 710px);
+    top: 0px;
+    right: 0px;
+}
+.banner .banner2 {
+    height: 175px;
+    background-image: url("./img/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+}
+.banner .banner3 {
+    margin-top: 5px;
+    height: 175px;
+    background-color: violet;
+    background-image: url("./img/banner3.jpg");
+    background-size: cover;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+}
+/* banner end  */

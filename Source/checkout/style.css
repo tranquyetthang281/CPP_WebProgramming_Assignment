@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    color: white;
+    position: relative;
+    background-color: #1d1d1d;
+}
+body::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+.content {
+    padding-top: 110px;
+}
