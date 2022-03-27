@@ -10,7 +10,7 @@
                 <th scope="col">STT</th>
                 <th scope="col">Order ID</th>
                 <th scope="col">Date</th>
-                <th scope="col">Table number</th>
+                <th scope="col">Delivery Address</th>
                 <th scope="col">Total Price</th>
                 <th scope="col">Status</th>
                 <th scope="col">Username</th>
@@ -26,7 +26,7 @@
                         <td> <?php echo $value['orderID'] ?> </td>
                         <td><?php echo $value['orderDate'] ?></td>
                         <td><?php echo $value['tableNumber'] ?></td>
-                        <td><?php echo $value['totalPrice'] ?></td>
+                        <td><?php echo $value['totalPrice'] ?>$</td>
                         <td class="text-primary ">
                             <a class="change-state" href="<?php echo $DOMAIN ?>/Order/changeState/<?php echo $value['orderID'] ?>">
                                 <button type="button" class="btn btn-<?php if ($value['stateName'] == 'Confirmed') echo 'success';

@@ -1,9 +1,9 @@
 <?php
 class OrderModel extends Database
 {
-    function doOrder($orderDate, $tableNumber, $totalPrice, $username)
+    function doOrder($id, $orderDate, $tableNumber, $totalPrice, $username)
     {
-        $sql = "INSERT INTO `order`(orderDate,tableNumber,totalPrice,stateID,username) values ('$orderDate','$tableNumber','$totalPrice','1','$username')";
+        $sql = "INSERT INTO `order`(orderID, orderDate,tableNumber,totalPrice,stateID,username) values ('$id','$orderDate','$tableNumber','$totalPrice','1','$username')";
         $this->query($sql);
     }
     function getOrderHistory($username)

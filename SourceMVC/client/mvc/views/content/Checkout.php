@@ -37,7 +37,7 @@ $total = 0;
             </div>
             <div class='total'>
                 <span style='float:left;'> TOTAL </span>
-                <span style='float:right; text-align:right;'> <?php echo $total ?>$</span>
+                <span style='float:right; text-align:right;' id="price"> <?php echo $total ?>$</span>
             </div>
         </div>
         <div class='credit-info'>
@@ -47,39 +47,22 @@ $total = 0;
                         <td>Please select your card: </td>
                         <td>
                             <div class='dropdown' id='card-dropdown'>
-                                <div class='dropdown-btn' id='current-card'>Visa</div>
-                                <div class='dropdown-select'>
-                                    <ul>
-                                        <li>Zalo Pay</li>
-                                        <li>Momo</li>
-                                    </ul>
-                                </div>
+                                <div class='dropdown-btn' id='current-card'>Momo</div>
+                               
                             </div>
                         </td>
                     </tr>
                 </table>
-                <img src='<?php echo $DOMAIN ?>/images/visa.png' height='80' class='credit-card-image' id='credit-card-image'></img>
-                <span id='frame-0'>Your Table Number</span>
-                <input type="number" min=1 id="tableNum" class='input-field form-control get-input'></input>
-                <span id='frame-1'>Card Number</span>
-                <input class='input-field form-control get-input'></input>
-                <span id='frame-2'>Card Holder</span>
-                <input class='input-field form-control'></input>
-                <table class='half-input-table'>
-                    <tr>
-                        <td> <span id='frame-3'>Expires</span>
-                            <input class='input-field form-control'></input>
-                        </td>
-                        <td><span id='frame-4'>CVC</span>
-                            <input class='input-field form-control'></input>
-                        </td>
-                    </tr>
-                </table>
+                <img src='<?php echo $DOMAIN ?>/images/momo.jpg' height='80' class='credit-card-image' id='credit-card-image'></img>
+                <span id='frame-0'>Delivery Address</span>
+                <input type="text"  id="tableNum" class='input-field form-control get-input'></input>
+                                </table>
                 <button type="submit" class='pay-btn'>Checkout</button>
                 <div class="text-danger"><strong class="err"></strong></div>
                 <div class="text-success"><strong class="succ"></strong></div>
             </div>
         </div>
+        <span id="id"><?php echo uniqid("DH1") ?></span>
     </div>
 </div>
 <script src="<?php echo $DOMAIN ?>/client/public/js/checkout.js"></script>

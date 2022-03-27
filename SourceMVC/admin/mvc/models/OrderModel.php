@@ -18,6 +18,12 @@ class OrderModel extends Database
         $sql = "UPDATE `order` SET stateID = '$state' where orderID = '$orderID'";
         $this->query($sql);
     }
+    function success_state($orderID)
+    {
+        $state = (int) $this->get_order($orderID)['stateID'];
+        $sql = "UPDATE `order` SET stateID = '2' where orderID = '$orderID'";
+        $this->query($sql);
+    }
     function get_order($orderID)
     {
         $sql = "SELECT * FROM `order` WHERE orderID = '$orderID' ";

@@ -25,6 +25,12 @@ class Order extends Controller
         $orderModel->update_state($orderID);
         header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Order/OrderPage");
     }
+    function successState($orderID)
+    {
+        $orderModel = $this->model('OrderModel');
+        $orderModel->success_state($orderID);
+        header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Order/OrderPage");
+    }
     function deleteOrder($orderID)
     {
         $orderModel = $this->model('OrderModel');

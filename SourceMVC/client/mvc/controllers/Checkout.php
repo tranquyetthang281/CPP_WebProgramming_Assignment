@@ -8,7 +8,8 @@ class Checkout extends Controller
     }
     function doCheckout()
     {
-        $tableNum = (int)$_POST['tableNumber'];
+        $tableNum = $_POST['tableNumber'];
+        $id = $_POST['id'];
         $total = 0;
         foreach ($_SESSION as $key => $val) {
             if ($key == 'user_token') {
@@ -23,10 +24,10 @@ class Checkout extends Controller
         if (is_logged()) {
             $username = is_logged()['username'];
         }
-        $order->doOrder($orderDate, $tableNum, $total, $username);
+         $order->doOrder($id,$orderDate, $tableNum, $total, $username);
         require_once "Cart.php";
         $cart = new Cart();
         $cart->RemoveAll();
-        echo 'success';
+        echo  "success";
     }
 }
