@@ -43,7 +43,7 @@ $endpoint = "https://test-payment.momo.vn/v2/gateway/api/create";
   $orderInfo = "Thanh toán qua MoMo";
   $amount = $_GET["price"];
   $orderId = $_GET["id"];
-  $redirectUrl = "https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b";
+  $redirectUrl = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Order/successState/".$orderId;
   $ipnUrl = "http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Order/successState/".$orderId;
   $extraData = "";
   

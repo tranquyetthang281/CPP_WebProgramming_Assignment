@@ -29,7 +29,7 @@ class Order extends Controller
     {
         $orderModel = $this->model('OrderModel');
         $orderModel->success_state($orderID);
-        header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/admin/Order/OrderPage");
+        header("Location: http://localhost/CPP_WebProgramming_Assignment/SourceMVC/client/");
     }
     function deleteOrder($orderID)
     {
