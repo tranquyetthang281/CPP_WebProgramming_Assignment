@@ -62,9 +62,10 @@ $total = 0;
                 <div class="text-success"><strong class="succ"></strong></div>
             </div>
         </div>
-        <span id="id"><?php echo uniqid("DH1") ?></span>
+        
     </div>
 </div>
+<span id="id" style="color: transparent"><?php echo uniqid("DH1") ?></span>
 <script src="<?php echo $DOMAIN ?>/client/public/js/checkout.js"></script>
 <script>
 
