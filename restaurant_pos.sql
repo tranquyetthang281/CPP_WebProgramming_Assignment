@@ -221,9 +221,9 @@ INSERT INTO `item_in_cart` (`item_id`, `name`, `image`, `total_price`, `val`, `u
 --
 
 CREATE TABLE `order` (
-  `orderID` char(16) NOT NULL,
+  `orderID` varchar(255) NOT NULL,
   `orderDate` datetime DEFAULT NULL,
-  `tableNumber` int(11) DEFAULT NULL,
+  `tableNumber` varchar(255) DEFAULT NULL,
   `totalPrice` int(11) DEFAULT NULL,
   `stateID` int(11) DEFAULT NULL,
   `username` varchar(255) NOT NULL
@@ -244,17 +244,6 @@ INSERT INTO `order` (`orderID`, `orderDate`, `tableNumber`, `totalPrice`, `state
 --
 -- Bẫy `order`
 --
-DELIMITER $$
-CREATE TRIGGER `tg_order_insert` BEFORE INSERT ON `order` FOR EACH ROW BEGIN
-  INSERT INTO AUTO_MA_DAT_PHONG VALUES (NULL);
-  SET NEW.orderID = CONCAT('DH', LPAD(DAY(CURRENT_DATE()), 2, '0'), 
-									  LPAD(MONTH(CURRENT_DATE()), 2, '0'), 
-									  YEAR(CURRENT_DATE()), 
-                                      LPAD(LAST_INSERT_ID(), 6, '0'));
-END
-$$
-DELIMITER ;
-
 -- --------------------------------------------------------
 
 --
